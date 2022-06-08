@@ -9,16 +9,13 @@ function numeriRandom($min, $max, $n){
 
   while (count($numeriArr) < $n){
     $numeroRand = rand($min, $max);
-
     if(!in_array($numeroRand, $numeriArr)){
       $numeriArr[] = $numeroRand;
     }
-    
   }
-
   return $numeriArr;
-
 }
+
 $numeri = numeriRandom(1, 100 ,15);
 var_dump($numeri);
 ?>

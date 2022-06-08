@@ -36,7 +36,7 @@ $tappa1 = [
     'puntiOspite' => '51',
   ],
 ];
-var_dump($tappa1);
+// var_dump($tappa1);
 
 ?>
 
@@ -52,7 +52,9 @@ var_dump($tappa1);
 
 <ul>
   <?php for($i = 0; $i < count($tappa1); $i++ ): ?>
-    <li><?php echo $tappa1[$i]['casa'] . ' - ' . $tappa1[$i]['ospite'] .' | '. $tappa1[$i]['puntiCasa'] . ' - ' . $tappa1[$i]['puntiOspite']?></li>
+    <li>
+      <?php echo $tappa1[$i]['casa'] . ' - ' . $tappa1[$i]['ospite'] .' | '. $tappa1[$i]['puntiCasa'] . ' - ' . $tappa1[$i]['puntiOspite']?>
+    </li>
   <?php endfor; ?>
 </ul>
 

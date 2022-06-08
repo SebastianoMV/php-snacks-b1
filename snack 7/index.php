@@ -4,14 +4,14 @@ Creare un array contenente qualche alunno di un’ipotetica classe. Ogni alunno 
 <?php
   $alunni = [
     [
-      'nome' => 'Katia',
-      'cognome' => 'Perry',
+      'nome' => 'Pippo',
+      'cognome' => 'Baudo',
       'voti' => [6, 7, 8],
     ],
     [
-      'nome' => 'Gino',
-      'cognome' => 'De Gini',
-      'voti' => [9, 4, 8],
+      'nome' => 'Carlo',
+      'cognome' => 'Conti',
+      'voti' => [9, 7, 8],
     ],
     [
       'nome' => 'Fabrizio',
@@ -19,7 +19,8 @@ Creare un array contenente qualche alunno di un’ipotetica classe. Ogni alunno 
       'voti' => [4, 6, 5],
     ],
   ];
-  var_dump($alunni);
+  //var_dump($alunni);
+
 
 ?>
 
@@ -45,7 +46,6 @@ Creare un array contenente qualche alunno di un’ipotetica classe. Ogni alunno 
         } 
         $media = $media/count($alunni[$i]['voti']);
         echo $media; 
-        $media = 0;
        ?>
      </li>
    </ul>
